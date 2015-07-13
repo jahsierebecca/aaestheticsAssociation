@@ -1,0 +1,115 @@
+// $mobile: new-breakpoint(max-width 480px 6);
+// $tablet: new-breakpoint(max-width 798px 6);
+
+.top-title {
+	height: 200px;
+	display: block;
+	position: relative;
+	z-index: 0;
+	// +span-columns(12)}
+	.title-space {
+		height: 200px;
+		z-index: -1;
+		background-image: url("../img/ocean_still.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+
+.site-title {
+	z-index: 3;
+		.logo {
+			// position: absolute;
+
+			display: block;
+			height: 40px;
+			// bottom: -20px;
+			.logo-anchor {
+				position: absolute;
+				bottom: -10px;
+				left: 50%;
+				margin-left: -300px;
+				.logo-wrapper {
+					z-index: 13;
+					img {
+						z-index: 253;
+					}
+				}
+		}
+	}
+}
+
+// .type-2 {
+// 	color: red;
+
+// }
+
+
+
+.project {
+	@include outer-container(100%);
+	// padding: 15px;
+	height: 90vh;
+	@include clearfix;
+	background: white center center fixed no-repeat;
+	background-size: cover;
+
+	// @include media($tablet) {
+	// 	background-color: white;
+	// }
+}
+.descrip {
+	@include span-columns(12);
+
+	 @include media($medium-screen-up) {
+	// 	// background-color: white;
+	// 	height: 100%;
+	// }
+	// @include media($tablet) {
+		background-color: red;
+		@include span-columns(6);
+		height: 100%;
+	}
+	@include media($large-screen-up) {
+		 	background-color: green;
+	}
+}
+
+
+
+.type-2 {
+	float: right;
+}
+
+// .type-2 > .descrip {
+//   @include direction-context(right-to-left) {
+//    .right-to-left-block {
+//      @include span-columns(6);
+//     }
+//   }
+// }
+
+
+#item-1 {
+	background-image: url(../img/atom.png);
+}
+
+#item-2 {
+	background-image: url(../img/calendar.png);
+}
+
+#item-3 {
+	background-image: url(../img/cubes.png);
+}
+
+#item-4 {
+	background-image: url(../img/mtHood.png);
+}
+
+#item-5 {
+	background-image: url(../img/rain.png);
+}
+
+#item-6 {
+	background-image: url(../img/atom.png);
+}
